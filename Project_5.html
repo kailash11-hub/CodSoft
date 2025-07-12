@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Section with Bootstrap Cards</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        body{
+            background-color: rgb(112, 244, 220);
+        }
+        
+        .card-body {
+            background-color: #b0d6fa;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .card-body:hover {
+            transform: scale(1.05);
+        }
+        
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .card-subtitle {
+            font-size: 1.1rem;
+            color: #6c757d;
+        }
+
+        .card-text {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .alumni-card img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 5px solid #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .alumni-card {
+            margin-bottom: 30px;
+        }
+
+        .alumni-section {
+            padding: 50px 0;
+            background-color:rgb(114, 241, 209);
+        }
+
+        .alumni-card:hover {
+            transform: scale(1.1);
+        }
+
+        .card-deck .card {
+            margin: 10px;
+        }
+        header {background-color: #5b0913;color: #fff;padding: 20px;}
+    header h1 { margin: 0; }
+    .logo {float: left; margin: auto;padding-left:60px;}
+        .logo img { width: 120px;height: 100px; box-shadow: 0 0 10px rgba(1, 1, 1, 0.1);}
+    #navs{background-color: #dfeacd;}
+
+        /*@media (max-width: 767px) {
+            .alumni-card img {
+                width: 120px;
+                height: 120px;
+            }
+
+            .alumni-card {
+                text-align: center;
+            }
+        }*/
+    </style>
+</head>
+<body>
+
+
+    <header>
+        <div class="logo">
+            <img  src="http://davpskusunda.com/MyImages/LOGO.png" alt="School Logo">
+        </div>
+        <h1 style="color:antiquewhite;">D. A. V. PUBLIC SCHOOL</h1>
+        <p style="color:antiquewhite;">Respected Alumnis of our School</p>
+        <nav class="navbar navbar-expand-lg navbar-light" >
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <button class="btn  btn-warning btn-sm"><a class="nav-link" href="Project_3.html">Home <span class="sr-only"></span></a></button>
+                    </li>&nbsp;
+                    <li class="nav-item dropdown">
+                        <button class="btn  btn-danger btn-sm"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Achievements
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#gallery-modal">Gallery</a>
+                            <a class="dropdown-item" href="pp.webp">Achievement 1</a>
+                            <a class="dropdown-item" href="ppp.jpg">Achievement 2</a>
+                            <a class="dropdown-item" href="pppp.webp">Achievement 3</a>
+                        </div>
+                    </li></button>&nbsp;
+                    <li class="nav-item">
+                        <button class="btn  btn-primary btn-sm" ><a class="nav-link" href="Project_5.html">Alumni</a></button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header><hr>
+
+<div id="alumni" class="container alumni-section">
+    <h2 class="text-center mb-5">Our Alumni</h2>
+
+    <div class="row row-cols-1 row-cols-md-3">
+    
+        <div class="col mb-4">
+            <div class="card alumni-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6L7yp3P02kBtU_dZSXQOTIvs-Y0-ekQDIhw&s"
+                class="card-img-top" alt="Alumni 1" class="card-img-top" alt="Alumni 1">
+                <div class="card-body">
+                    <h5 class="card-title">MS Dhoni</h5>
+                    <h6 class="card-subtitle mb-2">Professional Cricketer</h6>
+                    <p class="card-text">Dhoni was born on July 7, 1981 in Ranchi, Bihar (now Jharkhand). He
+                        played football as a goalkeeper in school, but switched to cricket..... </p>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="col mb-4">
+            <div class="card alumni-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9qIvBoZBl90l-L0ZVqyF9Fq_F5-f3xT1ErQ&s"
+                class="card-img-top" alt="Alumni 2">
+                <div class="card-body">
+                    <h5 class="card-title">Atal Bihari Vajpayee</h5>
+                    <h6 class="card-subtitle mb-2">Former Prime Minister Of India</h6>
+                    <p class="card-text">Atal Bihari Vajpayee (25 December 1924 – 16 August 2018) was an Indian
+                        politician, who served as the Prime Minister of India, first for a term of 13 days in
+                        .....</p>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="col mb-4">
+            <div class="card alumni-card">
+                <img src="https://scoonews.com/wp-content/uploads/2022/07/sts-107-kalpana-chawla-formal14583120121458312012.jpg"
+                class="card-img-top" alt="Alumni 3">
+                <div class="card-body">
+                    <h5 class="card-title">Kalpana Chawla</h5>
+                    <h6 class="card-subtitle mb-2">Astronaut</h6>
+                    <p class="card-text">Kalpana Chawla was an Indian-American astronaut, engineer, and pilot
+                        who was the first South Asian American woman to travel to space.....</p>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <title>practice</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <button id="bt">double</button>
+    <button id="bt1">mouseleave</button>
+    <button id="bt2">mousedown</button>
+    <button id="bt3">Bg Color</button>
+    <button id="bt4">hover</button>
+    <button id="bt5">focus</button>
+    <p class="pp">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, culpa.</p>
+    <p class="pt">Para 222</p>
+    <div class="dv" style="height:100px; width:100px; background-color:red;"></div>
+    <div class="dv1" style="height:100px; width:100px; background-color:rgb(123, 192, 58);"></div>
+
+    <script>
+        $(document).ready(function () {
+            $("#bt").dblclick(function () {
+                $(".pp").hide();
+            });
+            $(".pt").dblclick(function () {
+                $(this).hide();
+            });
+            $("#bt1").mouseleave(function () {
+                alert("hello");
+            });
+            /*$(".dv").mousedown(function () {
+                alert("Hello bachooo");
+            });
+            $(".dv").mouseup(function(){
+                alert("Goodbye");
+            });*/
+            $(".dv1").hover(function () {
+                alert("hovered")
+            }, function () {
+                alert("mouse out");
+            });
+            $("input").focus(function () {
+                $(this).css("background-color", "blue");
+            });
+            $("#bt3").click(function () {
+                $("body").css("background-color", "pink");
+            });
+        });
+
+    </script>
+</body>
+
+</html>

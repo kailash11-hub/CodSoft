@@ -1,0 +1,95 @@
+<html>
+<head>
+    <title>Question10</title>
+    <style>
+        body{
+            padding:50px;
+        }
+        .forms {
+            border: 1px solid;
+            width: 350px;
+            height: 520px;
+            position: relative;
+            left: 400;
+            border-radius: 7px;
+            border-spacing: 10px;
+            box-shadow: 1px 1px 1px 1px rgb(178, 204, 237);
+
+        }
+
+        .logo {
+            position: relative;
+            left: 100;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="number"] {
+            padding: 7px;
+            margin: 8px;
+            position: relative;
+            left: 40;
+            width: 250px;
+            font-family: sans-serif;
+        }
+        select {
+            padding: 7px;
+            margin: 8px;
+            position: relative;
+            left: 80;
+            width: 180;
+        }
+
+        #gender {
+            padding: 15px;
+            position: relative;
+            left: 90;
+        }
+
+        button {
+            margin: 10px;
+            position: relative;
+            left: 115;
+            padding: 6px;
+            color: rgb(249, 244, 244);
+            background-color: rgb(97, 154, 252);
+            width: 100;
+            cursor:pointer;
+        }
+
+        h2 {
+            text-align: center;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="forms">
+        <section>
+            <img src="soa.jpeg" width="150" class="logo">
+            <form method="post">
+                <h2>Registration Form</h2>
+
+                <input type="text" name="name" required placeholder="Enter your name here"><br>
+
+                <input type="email" name="email" required placeholder="Email: abc@gmail.com"><br>
+
+                <input type="number" name="password" placeholder="Password: 1234****9">
+                <div id="gender">
+                    <input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Female
+                </div>
+                <select name="state">
+                    <option value disabled selected>Select State:</option>
+                    <option value="jh">Jharkhand</option>
+                    <option value="br">Bihar</option>
+                    <option value="od">Odisha</option>
+                    <option value="mh">Maharashtra</option>
+                </select><br>
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Home Page
+    </title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        header {
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 70px;
+            position: fixed;
+            background-color: rgb(18, 18, 20);
+            padding: 0 20px;
+        }
+
+        main {
+            margin-top: 80px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        .heads {
+            display: flex;
+        }
+
+        ul {
+            padding-left: 900px;
+        }
+
+        ul li {
+            display: inline;
+            padding: 10px;
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(85, 85, 242);
+        }
+
+        ul li:hover {
+            background-color: rgb(241, 226, 113);
+            border-radius: 4px;
+        }
+
+        section {
+            padding: 10px 0 3px 0;
+
+            border: 0px solid;
+            height: 700px;
+            border-radius: 5px;
+            box-shadow: 1px;
+        }
+
+        ol li {
+            color: black;
+
+        }
+
+        ol li:hover {
+            background-color: white;
+        }
+
+        .skil {
+            display: flex;
+            padding-left: 100px;
+        }
+
+        .item {
+            padding: 10px;
+            border-radius: 50%;
+            display: block;
+
+        }
+
+        section h1 {
+            padding-top: 70px;
+            ;
+        }
+
+        #home {
+            background-image: linear-gradient(to right, rgb(253, 68, 68), rgb(252, 99, 247));
+
+        }
+
+        #skill {
+            background-image: linear-gradient(to right, rgb(209, 213, 194), rgb(51, 123, 238));
+        }
+
+        #about {
+            background-image: linear-gradient(to right, rgb(65, 225, 231), pink);
+        }
+
+        #proj {
+            background-image: linear-gradient(to right, rgb(234, 96, 192), rgb(255, 162, 0));
+        }
+
+        #resume {
+            background-image: linear-gradient(to right, rgb(186, 201, 246), rgb(211, 23, 155));
+        }
+
+        .pr {
+            border-radius: 50%;
+            display: block;
+            position: relative;
+            left: 310px;
+
+        }
+
+        .abt {
+            padding-left: 310px;
+            font-size: 20px;
+        }
+
+        .skil img {
+            border-radius: 50%;
+            display: block;
+        }
+
+        #contact {
+            background-image: linear-gradient(to right, rgb(65, 225, 231), pink);
+            position: relative;
+
+            left: 380px;
+            top: 250px;
+
+        }
+
+        .pj {
+            display: flex;
+            padding: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: large;
+        }
+
+        .det {
+            padding-left: 30px;
+            font-size: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="heads">
+            <h3 style="padding-left: 10px;color:white;">Online Portfolio</h3>
+            <ul>
+                <b>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#skill">Skills</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#proj">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                </b>
+            </ul>
+
+        </div>
+    </header>
+
+    <main>
+        <section id="home" style="text-align: center;">
+            <h2 style="font-size: 50px;padding-top:20px;"><b>KAILASH KUMAR</b></h2>
+            <h4 style="color: white;">Computer Science Student | Web Developer</h4>
+            <p
+                style="padding:10px 100px 0 100px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size:20px;">
+                Hi! I'm Kailash, a 3rd-year Computer Science student at Siksha 'O' Anusandhan University with a CGPA of
+                8.45. I enjoy creating websites and coding in C and Java. I'm passionate about building useful,
+                user-friendly applications and constantly learning new technologies.</b></p>
+            <button
+                style="font-size: 27px; border-radius:8px;background-image:linear-gradient(to left,rgb(25, 0, 255),rgb(34, 0, 255));"
+                type="hire"><a href="#contact" style="color:rgb(255, 255, 255);">HIRE ME</a></button><br><br>
+            <img height="350" width="850px" src="Web-Development.jpeg">
+        </section>
+
+        <section id="about">
+            <h1 class="det">ABOUT ME:</h1>
+            <img class="pr" height="200px" width="180px" src="My Img Ghibli.png">
+            <p class="abt" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">I Am
+                Developer blends expertise with industry know-how to guide your next property development.</p>
+
+
+            <p class="abt" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Software Developers use
+                software development languages and tools to write, edit, maintain, and test computer software. Software
+                Developers follow the software development lifecycle (SDLC) to plan, design, build, test, and deploy
+                software applications, ranging from websites and mobile applications to web applications and video
+                games. In addition to creating new software. Software Developers Improve and maintain the working order
+                of existing software</p>
+
+
+        </section>
+        <section id="skill">
+            <h1 class="det">MY SKILLS:</h1>
+            <div class="skil">
+                <div class="item"><img height="220px" src="htmm.jpeg">
+                    <blockquote
+                        style="padding-left: 30px;font-size: 25px;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                        HTML</blockquote>
+                </div>
+
+                <div class="item"><img height=220px src="cs.jpeg">
+                    <blockquote
+                        style="padding-left: 30px;font-size: 25px;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                        CSS</blockquote>
+                </div>
+
+                <div class="item"><img height=220px src="jss.png">
+                    <blockquote
+                        style="padding-left: 30px;font-size: 25px;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                        JAVA SCRIPT</blockquote>
+                </div>
+                <div class="item"><img height=220px src="jv.png">
+                    <blockquote
+                        style="padding-left: 30px;font-size: 25px;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                        JAVA</blockquote>
+                </div>
+                <div class="item"><img height=220px src="cc.jpeg">
+                    <blockquote
+                        style="padding-left: 30px;font-size: 25px;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                        C</blockquote>
+                </div>
+            </div>
+
+        </section>
+        <section id="proj">
+            <h1 class="det">MY PROJECTS:</h1>
+            <div class="pj">
+                <div style="padding-left: 50px;">
+                    <img style="border:2px solid;" height="300px" width="500px" src="main.jpg">
+                    <blockquote>School Website</blockquote>
+                    <button
+                        style="font-size: 20px;position: relative;left:80px;background-color: blue;border-radius: 4px;"><a
+                            style="color:white" href="Project_MainPage.html">Demo</a></button>
+                </div>
+                <div style="padding-left: 50px;">
+                    <img style="border:2px solid;" height="300px" width="300px" src="regd.png">
+                    <blockquote>College Registration Page</blockquote>
+                    <button
+                        style="font-size: 20px;position: relative;left:80px;background-color: blue;border-radius: 4px;color:white;"><a
+                            style="color:white" href="A2Q10.html">Demo</a></button>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume">
+            <h1 class="det">RESUME:</h1>
+            <button type="download"
+                style="font-size: 30px;border-radius: 5px;position: relative;left:400px;top:50px;background-color: blue;"><a
+                    style="color: white;padding:3px;" href="My Resume.pdf">Download Resume</a></button>
+            <section id="contact" style="height:200px;width:700px;">
+                <h2 style="padding-left:10px ;">Contact Details:</h2>
+                <div style="position: relative;left:90px">
+                    <p>Email: <a>jimmiejackcj4704@gmail.com</a></p>
+                    <P>Phone: +91 99999 55555</P>
+                    <p>LinkedIn: <a>linkedin.com/in/kailash-kumar-2707231a7</a></p>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer style="text-align: center; padding: 10px; background-color: #222; color: #fff;">
+        &copy; Kailash Kumar | All Rights Reserved
+    </footer>
+</body>
+
+</html>
